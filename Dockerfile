@@ -8,6 +8,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     git \
     vim-tiny \
     python-pip \
+    python-setuptools \
     && pip install sphinx_rtd_theme 
 
 COPY dotbashrc /root/.bashrc
