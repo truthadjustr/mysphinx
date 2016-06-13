@@ -1,11 +1,6 @@
 #!/bin/sh
 #
 
-if [ $0 = "$1" ];then
-    # CMD
-    shift
-fi
-
 CMD=$1
 
 case $CMD in

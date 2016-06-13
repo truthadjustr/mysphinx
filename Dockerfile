@@ -18,4 +18,4 @@ COPY template.tar /tmp/
 COPY initdoc.sh /bin/
 
 ENTRYPOINT ["/bin/initdoc.sh"]
-CMD ["/bin/initdoc.sh","init","doc title here","doc author here"]
+CMD ["init","doc title here","doc author here"]
