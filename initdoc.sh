@@ -16,7 +16,16 @@ case $CMD in
     cd /mnt/mydocs && make html
     ;;
 
+    rebuild)
+    cd /mnt/mydocs && make html
+    if [ $? -eq 0 ];then
+        echo "success"
+    else
+        echo "failed"
+    fi 
+    ;;
+
     *)
-    echo "[$CMD] nothing to do"
+    echo "[$CMD]: invalid command"
     ;;
 esac
